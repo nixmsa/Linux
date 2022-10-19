@@ -1,0 +1,62 @@
+[root@lvmredhat8 ~]# subscription-manager list
++-------------------------------------------+
+    Installed Product Status
++-------------------------------------------+
+Product Name:   Red Hat Enterprise Linux for x86_64
+Product ID:     479
+Version:        8.6
+Arch:           x86_64
+Status:         Subscribed
+Status Details:
+Starts:         10/01/2021
+Ends:           09/30/2022
+
+[root@lvmredhat8 ~]# sudo subscription-manager remove --all
+Consumer profile "a8e083d7-64b9-44df-9729-c4eeda273c60" has been deleted from the server. You can use command clean or unregister to remove local profile.
+[root@lvmredhat8 ~]# sudo subscription-manager unregister
+Unregistering from: subscription.rhsm.redhat.com:443/subscription
+System has been unregistered.
+[root@lvmredhat8 ~]# subscription-manager list
++-------------------------------------------+
+    Installed Product Status
++-------------------------------------------+
+Product Name:   Red Hat Enterprise Linux for x86_64
+Product ID:     479
+Version:        8.6
+Arch:           x86_64
+Status:         Unknown
+Status Details:
+Starts:
+Ends:
+
+[root@lvmredhat8 ~]# sudo subscription-manager register
+Registering to: subscription.rhsm.redhat.com:443/subscription
+Username: 4redhat7
+Password:
+The system has been registered with ID: 71666ea0-34a4-4219-9a56-6194d44faa8f
+The registered system name is: lvmredhat8.example.com
+[root@lvmredhat8 ~]# sudo subscription-manager refresh
+All local data refreshed
+[root@lvmredhat8 ~]# sudo subscription-manager attach --auto
+Ignoring request to auto-attach. It is disabled for org "16438399" because of the content access mode setting.
+[root@lvmredhat8 ~]#
+[root@lvmredhat8 ~]# subscription-manager list
++-------------------------------------------+
+    Installed Product Status
++-------------------------------------------+
+Product Name:   Red Hat Enterprise Linux for x86_64
+Product ID:     479
+Version:        8.6
+Arch:           x86_64
+Status:         Not Subscribed
+Status Details:
+Starts:
+Ends:
+
+[root@lvmredhat8 ~]# yum repolist
+Updating Subscription Management repositories.
+repo id                                                 repo name
+rhel-8-for-x86_64-appstream-rpms                        Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+rhel-8-for-x86_64-baseos-rpms                           Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
+[root@lvmredhat8 ~]#
+
