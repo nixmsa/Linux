@@ -1,0 +1,18 @@
+[root@lvmredhat8 ~]# yum install insights-client
+Updating Subscription Management repositories.
+Last metadata expiration check: 0:35:35 ago on Wed 19 Oct 2022 12:47:26 PM EDT.
+Package insights-client-3.1.7-7.el8_6.noarch is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[root@lvmredhat8 ~]# insights-client --unregister
+This system is already unregistered.
+[root@lvmredhat8 ~]# insights-client --register
+Successfully registered host lvmredhat8.example.com
+Automatic scheduling for Insights has been enabled.
+Starting to collect Insights data for lvmredhat8.example.com
+Uploading Insights data.
+Successfully uploaded report from lvmredhat8.example.com to account 11392128.
+View the Red Hat Insights console at https://console.redhat.com/insights/
+[root@lvmredhat8 ~]#
+
