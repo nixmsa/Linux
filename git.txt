@@ -1,0 +1,3 @@
+[root@ansible1 Scripts]# git config --global user.name "Muhammad Shahid Ahsan"
+[root@ansible1 Scripts]# git config --global user.email "nixmsa@gmail.com"
+
