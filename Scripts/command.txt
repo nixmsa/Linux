@@ -1,0 +1,15 @@
+[root@ansible1 Scripts]# lpstat -r -s  | wc -l
+device for printer_queue_01: socket://192.168.0.77:9100
+device for printer_queue_02: socket://192.168.0.78:9100
+device for printer_queue_03: socket://192.168.0.79:9100
+device for printer_queue_04: socket://192.168.0.80:9100
+device for printer_queue_05: socket://192.168.0.81:9100
+device for printer_queue_06: socket://192.168.0.82:9100
+device for printer_queue_07: socket://192.168.0.83:9100
+device for printer_queue_08: socket://192.168.0.84:9100
+device for printer_queue_09: socket://192.168.0.85:9100
+device for printer_queue_11: socket://192.168.0.87:9100
+device for printer_queue_20: socket://192.168.0.86:9100
+[root@ansible1 Scripts]# bash makequeues.sh debug fs_data
+
+
