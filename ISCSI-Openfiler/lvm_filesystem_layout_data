@@ -1,0 +1,6 @@
+2G     oraclevg  dblv          /u01/app/oracle         755 root:sys
+2G     oraclevg  gridlv        /u01/app/grid           755 root:sys
+1G     oraclevg  oemlv         /u01/app/oracle/agent   755 root:sys
+1G     oraclevg  scriptlv      /u01/app/oracle/script  755 root:sys
+2G     oraclevg  ogglv         /u10                    755 root:sys
+1G     oraclevg  oswatcherlv00 /oswatcher              755 root:sys
